@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scraped Data</title>
+</head>
+<body>
+    <h1>Scraped Data</h1>
+    <table>
+        <tr>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Link</th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{ item.email }}</td>
+            <td>{{ item.phone }}</td>
+            <td>{{ item.link }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
